@@ -1,0 +1,153 @@
+--------------------------------------------
+Practical Exercise — Explore an API Concept
+--------------------------------------------
+
+Job Portal API Endpoints
+
+1. GET /api/jobs
+
+This endpoint is used to retrieve all available jobs from the job portal.
+It sends a request to the server and gets a list of jobs as a response.
+
+
+2. POST /api/jobs
+
+This endpoint is used to create a new job.
+A recruiter can send job details such as job title, company, salary, and location.
+The server then saves the new job.
+
+
+3. DELETE /api/jobs/:id
+
+This endpoint is used to delete a specific job.
+The :id represents the unique ID of the job that needs to be deleted.
+
+Example:
+DELETE /api/jobs/123
+
+This will delete the job with ID 123.
+
+
+
+
+--------------------------------------------------
+Practical Exercise — Identify the MERN Components
+--------------------------------------------------
+
+Application: Employee Management System
+
+1. User Interface — React
+
+React is responsible for creating the user interface of the employee management system.
+Administrators can use React pages and forms to create, view, update, and delete employees.
+
+2. Backend API — Express.js
+
+Express.js is responsible for creating the backend API.
+It handles requests such as creating, retrieving, updating, and deleting employee records.
+
+3. Server-side JavaScript Execution — Node.js
+
+Node.js is responsible for running JavaScript on the server.
+It provides the environment in which the Express.js backend runs and processes API requests.
+
+4. Database — MongoDB
+
+MongoDB is responsible for storing employee records.
+It can store information such as employee name, email, department, salary, and other details.
+
+Summary:
+
+React     → User Interface
+Express.js → Backend API
+Node.js   → Server-side JavaScript
+MongoDB   → Database
+
+
+----------------------------------
+Debugging Exercise
+----------------------------------
+
+I created a JavaScript program with an undeclared variable.
+
+Initial code:
+
+const userName = "Developer";
+
+console.log(userName);
+console.log(userEmail);
+
+When I ran the program using Node.js, I received a ReferenceError because
+userEmail was not declared.
+
+Error:
+ReferenceError: userEmail is not defined
+
+I fixed the error by declaring the missing variable:
+
+const userEmail = "developer@example.com";
+
+After fixing the error, the program successfully displayed:
+
+Developer
+developer@example.com
+
+This exercise helped me understand that errors are a normal part of
+software development and debugging is used to identify and fix those errors.
+
+
+
+REFLECTION ACTIVITY — DAY 1
+
+1. What is the difference between frontend and backend development?
+
+Frontend development focuses on the part of an application that users can see and interact with. In the MERN stack,
+ React is mainly used for frontend development.
+
+Backend development handles the server-side logic, APIs, authentication, and communication with the database. 
+Express.js and Node.js are mainly used for backend development.
+
+
+2. Why is JavaScript important in the MERN stack?
+
+JavaScript is important because it is used throughout the MERN stack. React uses JavaScript for the frontend, 
+while Node.js and Express.js use JavaScript for the backend. This allows developers to use one programming language 
+for both frontend and backend development.
+
+
+3. What role does MongoDB play in an application?
+
+MongoDB is the database in the MERN stack. It stores application data such as users,
+ jobs, and job applications. The backend can create, read, update, and delete this data.
+
+
+4. What is the purpose of an API?
+
+An API allows different parts of an application to communicate with each other. 
+For example, a React frontend can send a request to an Express backend through an API to retrieve or create job information.
+
+
+5. What happens when a React frontend sends a request to an Express backend?
+
+When React sends a request, the request goes to an Express API endpoint. 
+Express receives and processes the request. The backend may interact with MongoDB to get or update data. Then Express sends a response, 
+usually in JSON format, back to the React frontend. React displays the received data to the user.
+
+
+6. Why are CRUD operations important?
+
+CRUD stands for Create, Read, Update, and Delete. These operations are important because most applications 
+need to create, view, modify, and delete data. For example, a job portal can create a job, read job details, 
+update a job, and delete a job.
+
+
+7. What application would you like to build using MERN?
+
+I would like to build a Job Portal using MERN. It will allow job seekers to search and apply for jobs, 
+recruiters to post and manage jobs, and administrators to manage users and job listings.
+
+
+8. Which part of MERN do you currently understand the least?
+
+Currently, I understand React and frontend development the least. I want to learn more about 
+React components, state management, API integration, and how React communicates with the backend.

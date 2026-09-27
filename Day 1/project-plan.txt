@@ -1,0 +1,145 @@
+MINI ASSIGNMENT — MERN APPLICATION PLANNING
+
+Application Name:
+Job Portal
+
+1. Target Users
+
+The main target users are:
+- Job seekers who are looking for jobs.
+- Recruiters or companies who want to post job openings.
+- Administrators who manage the platform.
+
+
+2. Problem the Application Solves
+
+The application provides a single platform where job seekers can search and apply for jobs, while recruiters can create and manage job postings.
+
+It reduces the difficulty of finding suitable jobs and helps companies manage their recruitment process.
+
+
+3. Main Features
+
+- User registration and login
+- User and recruiter roles
+- Browse available jobs
+- Search and filter jobs
+- View job details
+- Apply for jobs
+- Track application status
+- Recruiters can create jobs
+- Recruiters can update and delete jobs
+- Recruiters can view applications
+- Admin can manage users and jobs
+
+
+4. Frontend Requirements
+
+The frontend will be developed using React.js.
+
+Required frontend pages/features:
+- Home page
+- Login and registration pages
+- Job listing page
+- Job details page
+- Job search and filter
+- Job application form
+- User dashboard
+- Recruiter dashboard
+- Job creation and editing forms
+- Application status page
+
+
+5. Backend Requirements
+
+The backend will be developed using Node.js and Express.js.
+
+The backend will:
+- Handle user authentication
+- Provide REST APIs
+- Manage users and roles
+- Create, read, update, and delete jobs
+- Handle job applications
+- Manage application status
+- Validate user requests
+- Connect the application with MongoDB
+
+
+6. Database Information
+
+MongoDB will be used as the database.
+
+The following information will be stored:
+
+Users:
+- Name
+- Email
+- Password
+- Role
+
+Jobs:
+- Job title
+- Company name
+- Description
+- Location
+- Salary
+- Skills
+- Recruiter ID
+- Created date
+
+Applications:
+- Job ID
+- Applicant ID
+- Resume
+- Application status
+- Applied date
+
+
+7. Possible API Endpoints
+
+GET    /api/jobs
+POST   /api/jobs
+GET    /api/jobs/:id
+PUT    /api/jobs/:id
+DELETE /api/jobs/:id
+
+POST   /api/auth/register
+POST   /api/auth/login
+
+POST   /api/jobs/:id/apply
+GET    /api/applications
+GET    /api/applications/:id
+
+PUT    /api/applications/:id/status
+
+
+
+MINI ASSIGNMENT — DESIGN YOUR FIRST DATA STRUCTURE
+
+For the Job Portal application, the main data types are Users, Jobs, and Applications.
+
+1. User
+
+- name
+- email
+- password
+- role
+- phone
+
+
+2. Job
+
+- title
+- company
+- description
+- location
+- salary
+
+
+3. Application
+
+- jobId
+- applicantId
+- resume
+- status
+- appliedDate
