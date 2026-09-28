@@ -1,0 +1,134 @@
+-----------------------------------
+Developer Tools — HTML Inspection
+-----------------------------------
+
+I opened my HTML page in a modern browser and used Developer Tools
+to inspect the Elements panel.
+
+I identified the following elements:
+
+Document root: <html>
+Head section: <head>
+Body section: <body>
+Page heading: <h1> / <h2>
+Navigation: <nav>
+Main content: <main>
+Form controls: <input>, <select>, <textarea>, <button>
+Footer: <footer>
+
+I also temporarily changed a heading using Developer Tools.
+The change was visible immediately in the browser.
+
+After refreshing the page, the change disappeared because
+Developer Tools changes are temporary and do not normally modify
+the original HTML source file.
+
+
+-----------------------
+ACCESSIBILITY REVIEW
+-----------------------
+
+1. Does every meaningful image have useful alternative text?
+
+Yes. The profile image has useful alternative text using the alt attribute.
+
+2. Does every form control have a label?
+
+Yes. The form controls have associated labels using the label element
+and matching for and id attributes.
+
+3. Is the heading hierarchy logical?
+
+Yes. The pages use headings in a logical hierarchy such as h1, h2, and h3.
+
+4. Are navigation links inside a navigation region?
+
+Yes. Navigation links are placed inside the nav element.
+
+5. Are buttons used for actions?
+
+Yes. Buttons are used for actions such as submitting and resetting the form.
+
+6. Are links used for navigation?
+
+Yes. Anchor elements are used for navigating between pages and sections.
+
+7. Can the page structure be understood without relying on visual styling?
+
+Yes. Semantic HTML elements such as header, nav, main, section, article,
+and footer provide meaningful structure even without CSS styling.
+
+Accessibility Problems Found:
+
+No major accessibility problems were found in my HTML pages.
+
+
+
+--------------------------
+VALIDATION REQUIREMENTS
+--------------------------
+
+I used HTML validation attributes in the CareerConnect job application form.
+
+Required fields include:
+- Full Name
+- Email
+- Phone
+- Position
+- Terms and Conditions
+- Privacy Policy Agreement
+
+I used the following HTML validation features:
+
+required
+type="email"
+type="tel"
+accept=".pdf,.doc,.docx"
+
+I tested the form by submitting it without completing the required fields.
+
+The browser displayed validation messages and prevented the form from
+being submitted until the required fields were completed.
+
+This showed me that HTML provides basic client-side form validation
+without requiring JavaScript.
+
+
+-----------------------------------
+PROFESSIONAL HTML CODING STANDARDS
+------------------------------------
+
+I reviewed my CareerConnect project and followed professional HTML
+coding standards.
+
+- I use lowercase HTML element names.
+- I maintain proper indentation.
+- I use semantic HTML elements where appropriate.
+- I use meaningful names for classes.
+- I use descriptive page titles.
+- I provide alt text for meaningful images.
+- I use labels for form controls.
+- I maintain a logical heading hierarchy.
+- I keep my HTML structure readable.
+- I avoid unnecessary nesting.
+- I use HTML for structure and meaning rather than visual styling.
+- I keep content and presentation conceptually separate.
+
+These practices make HTML code more readable, accessible, maintainable,
+and easier for other developers to understand.
+
+
+--------------------------------
+DAY 2 — PRACTICAL DELIVERABLES
+---------------------------------
+
+1. Personal Developer Profile Page — Completed
+2. Professional Job Listing Page — Completed
+3. Internship Application Form — Completed
+4. Employee Data Table — Completed
+5. Semantic CareerConnect Homepage — Completed
+6. CareerConnect Job Application Form — Completed
+7. HTML Architecture and Folder Structure — Completed
+8. Browser Developer Tools Inspection — Completed
+9. Accessibility Review — Completed
+10. Knowledge Check — Completed
