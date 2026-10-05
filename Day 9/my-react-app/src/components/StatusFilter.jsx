@@ -1,0 +1,18 @@
+function StatusFilter({ status, setStatus }) {
+  return (
+    <select
+      className="status-filter"
+      value={status}
+      onChange={(event) => setStatus(event.target.value)}
+    >
+      <option value="All">All Status</option>
+      <option value="Applied">Applied</option>
+      <option value="Shortlisted">Shortlisted</option>
+      <option value="Interview">Interview</option>
+      <option value="Hired">Hired</option>
+      <option value="Rejected">Rejected</option>
+    </select>
+  );
+}
+
+export default StatusFilter;

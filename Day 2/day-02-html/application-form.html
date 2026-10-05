@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Internship Application Form</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Internship Application Form</h1>
+
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="job-listing.html">Jobs</a> |
+            <a href="application-form.html">Apply</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section>
+            <h2>Apply for Internship</h2>
+
+            <form>
+
+                <!-- Personal Information -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <p>
+                        <label for="fullName">Full Name:</label>
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="email">Email Address:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="dob">Date of Birth:</label>
+                        <input
+                            type="date"
+                            id="dob"
+                            name="dob"
+                        >
+                    </p>
+
+                    <p>
+                        <label for="city">City:</label>
+                        <input
+                            type="text"
+                            id="city"
+                            name="city"
+                        >
+                    </p>
+
+                </fieldset>
+
+
+                <!-- Education and Skills -->
+                <fieldset>
+                    <legend>Education & Skills</legend>
+
+                    <p>
+                        <label for="education">Education:</label>
+
+                        <select
+                            id="education"
+                            name="education"
+                            required
+                        >
+                            <option value="">Select Education</option>
+                            <option value="bcs">BCS</option>
+                            <option value="bca">BCA</option>
+                            <option value="btech">B.Tech</option>
+                            <option value="mca">MCA</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="skills">Skills:</label>
+
+                        <textarea
+                            id="skills"
+                            name="skills"
+                            rows="4"
+                            cols="40"
+                            placeholder="Example: HTML, CSS, JavaScript, Node.js, MongoDB"
+                        ></textarea>
+                    </p>
+
+                    <p>
+                        <label for="experience">Experience Level:</label>
+
+                        <select
+                            id="experience"
+                            name="experience"
+                        >
+                            <option value="">Select Experience Level</option>
+                            <option value="fresher">Fresher</option>
+                            <option value="0-1">0-1 Year</option>
+                            <option value="1-2">1-2 Years</option>
+                            <option value="2+">2+ Years</option>
+                        </select>
+                    </p>
+
+                </fieldset>
+
+
+                <!-- Application Information -->
+                <fieldset>
+                    <legend>Application Information</legend>
+
+                    <p>
+                        <label for="resume">Resume:</label>
+
+                        <input
+                            type="file"
+                            id="resume"
+                            name="resume"
+                            accept=".pdf,.doc,.docx"
+                        >
+                    </p>
+
+                    <p>
+                        <label for="coverLetter">Cover Letter:</label>
+
+                        <textarea
+                            id="coverLetter"
+                            name="coverLetter"
+                            rows="6"
+                            cols="50"
+                            placeholder="Write your cover letter..."
+                        ></textarea>
+                    </p>
+
+                    <p>
+                        <label for="workMode">Preferred Work Mode:</label>
+
+                        <select
+                            id="workMode"
+                            name="workMode"
+                        >
+                            <option value="">Select Work Mode</option>
+                            <option value="remote">Remote</option>
+                            <option value="office">Office</option>
+                            <option value="hybrid">Hybrid</option>
+                        </select>
+                    </p>
+
+                </fieldset>
+
+
+                <!-- Submit -->
+                <p>
+                    <button type="submit">
+                        Submit Application
+                    </button>
+
+                    <button type="reset">
+                        Reset Form
+                    </button>
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 Internship Portal. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
