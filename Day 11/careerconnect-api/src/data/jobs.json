@@ -1,0 +1,102 @@
+[
+  {
+    "id": 101,
+    "title": "MERN Stack Developer",
+    "company": "TechNova Solutions",
+    "location": "Bangalore",
+    "employmentType": "Full-time",
+    "experience": "0-2 years",
+    "salary": "₹5-8 LPA",
+    "skills": ["MongoDB", "Express.js", "React", "Node.js"]
+  },
+  {
+    "id": 102,
+    "title": "Backend Developer",
+    "company": "CodeWorks India",
+    "location": "Pune",
+    "employmentType": "Full-time",
+    "experience": "1-3 years",
+    "salary": "₹6-10 LPA",
+    "skills": ["Node.js", "Express.js", "MongoDB", "REST API"]
+  },
+  {
+    "id": 103,
+    "title": "Frontend Developer",
+    "company": "WebSolutions Pvt Ltd",
+    "location": "Mumbai",
+    "employmentType": "Full-time",
+    "experience": "0-2 years",
+    "salary": "₹4-7 LPA",
+    "skills": ["HTML", "CSS", "JavaScript", "React"]
+  },
+  {
+    "id": 104,
+    "title": "Node.js Developer",
+    "company": "CloudTech Systems",
+    "location": "Bangalore",
+    "employmentType": "Full-time",
+    "experience": "2-4 years",
+    "salary": "₹8-12 LPA",
+    "skills": ["Node.js", "Express.js", "MongoDB", "JavaScript"]
+  },
+  {
+    "id": 105,
+    "title": "Full Stack Developer",
+    "company": "InnovateTech",
+    "location": "Hyderabad",
+    "employmentType": "Full-time",
+    "experience": "1-3 years",
+    "salary": "₹6-9 LPA",
+    "skills": ["JavaScript", "Node.js", "React", "MongoDB"]
+  },
+  {
+    "id": 106,
+    "title": "Software Developer",
+    "company": "DigitalEdge Technologies",
+    "location": "Delhi",
+    "employmentType": "Full-time",
+    "experience": "0-2 years",
+    "salary": "₹4-6 LPA",
+    "skills": ["JavaScript", "Node.js", "SQL", "Git"]
+  },
+  {
+    "id": 107,
+    "title": "JavaScript Developer",
+    "company": "NextGen Software",
+    "location": "Pune",
+    "employmentType": "Full-time",
+    "experience": "1-2 years",
+    "salary": "₹5-8 LPA",
+    "skills": ["JavaScript", "TypeScript", "Node.js", "Git"]
+  },
+  {
+    "id": 108,
+    "title": "API Developer",
+    "company": "DataCore Technologies",
+    "location": "Bangalore",
+    "employmentType": "Full-time",
+    "experience": "2-5 years",
+    "salary": "₹8-14 LPA",
+    "skills": ["Node.js", "REST API", "MongoDB", "Express.js"]
+  },
+  {
+    "id": 109,
+    "title": "Junior Web Developer",
+    "company": "BrightWeb Solutions",
+    "location": "Nashik",
+    "employmentType": "Internship",
+    "experience": "0-1 years",
+    "salary": "₹2-4 LPA",
+    "skills": ["HTML", "CSS", "JavaScript", "Git"]
+  },
+  {
+    "id": 110,
+    "title": "Backend Engineer",
+    "company": "FinTech Labs",
+    "location": "Hyderabad",
+    "employmentType": "Full-time",
+    "experience": "3-5 years",
+    "salary": "₹10-15 LPA",
+    "skills": ["Node.js", "Express.js", "MongoDB", "Docker"]
+  }
+]
