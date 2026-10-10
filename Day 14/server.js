@@ -25,7 +25,6 @@ app.use("/api/jobs", jobRoutes);
 app.use("/api/candidates", candidateRoutes);
 app.use("/api/applications", applicationRoutes);
 
-// Ye hamesha routes ke BAAD aana chahiye
 app.use(notFound);
 app.use(errorHandler);
 
