@@ -1,0 +1,12 @@
+const router = require('express').Router();
+const { protect, adminOnly } = require('../middleware/auth');
+const validateId = require('../middleware/validateId');
+const auth = require('../controllers/authController');
+const adm = require('../controllers/adminController');
+router.param('productId', validateId('product'));
+router.get('/', protect, adminOnly, adm.customers);
+router.patch('/me', protect, auth.updateProfile);
+router.get('/me/wishlist', protect, auth.getWishlist);
+router.put('/me/wishlist/:productId', protect, auth.addWishlist);
+router.delete('/me/wishlist/:productId', protect, auth.removeWishlist);
+module.exports = router;

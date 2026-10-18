@@ -1,0 +1,12 @@
+const router = require('express').Router();
+const { protect, adminOnly } = require('../middleware/auth');
+const validateId = require('../middleware/validateId');
+const ord = require('../controllers/orderController');
+router.param('id', validateId('order'));
+router.post('/', protect, ord.create);
+router.get('/my-orders', protect, ord.myOrders);
+router.get('/', protect, adminOnly, ord.all);
+router.get('/:id', protect, ord.get);
+router.patch('/:id/status', protect, adminOnly, ord.updateStatus);
+router.patch('/:id/cancel', protect, ord.cancel);
+module.exports = router;

@@ -1,0 +1,12 @@
+const router = require('express').Router();
+const { protect, optionalAuth, adminOnly } = require('../middleware/auth');
+const validateId = require('../middleware/validateId');
+const prod = require('../controllers/productController');
+router.param('id', validateId('product'));
+router.get('/', optionalAuth, prod.list);
+router.get('/brands', prod.brands);
+router.get('/:id', prod.get);
+router.post('/', protect, adminOnly, prod.create);
+router.patch('/:id', protect, adminOnly, prod.update);
+router.delete('/:id', protect, adminOnly, prod.remove);
+module.exports = router;

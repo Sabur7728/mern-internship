@@ -1,0 +1,10 @@
+const router = require('express').Router();
+const { protect, optionalAuth, adminOnly } = require('../middleware/auth');
+const validateId = require('../middleware/validateId');
+const cat = require('../controllers/categoryController');
+router.param('id', validateId('category'));
+router.get('/', optionalAuth, cat.list);
+router.post('/', protect, adminOnly, cat.create);
+router.patch('/:id', protect, adminOnly, cat.update);
+router.delete('/:id', protect, adminOnly, cat.remove);
+module.exports = router;
