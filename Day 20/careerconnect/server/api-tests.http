@@ -1,0 +1,50 @@
+### Use with the VS Code "REST Client" extension (or copy into Postman)
+@base = http://localhost:5000/api
+
+### Health
+GET {{base}}/health
+
+### Register candidate
+POST {{base}}/auth/register
+Content-Type: application/json
+
+{ "name": "Test User", "email": "test@example.com", "password": "Password@123", "role": "candidate" }
+
+### Login (copy token from response)
+POST {{base}}/auth/login
+Content-Type: application/json
+
+{ "email": "candidate1@careerconnect.com", "password": "Password@123" }
+
+### Wrong password -> 401
+POST {{base}}/auth/login
+Content-Type: application/json
+
+{ "email": "candidate1@careerconnect.com", "password": "wrong" }
+
+### Public jobs with search/filter/pagination
+GET {{base}}/jobs?search=react&location=bangalore&employmentType=Full-time&page=1&limit=5
+
+### No token -> 401
+GET {{base}}/applications
+
+### Candidate creating a job -> 403
+POST {{base}}/jobs
+Authorization: Bearer PASTE_CANDIDATE_TOKEN
+Content-Type: application/json
+
+{ "title": "Hack", "description": "Should be rejected", "location": "Pune", "companyName": "X" }
+
+### Candidate hitting admin route -> 403
+GET {{base}}/admin/users
+Authorization: Bearer PASTE_CANDIDATE_TOKEN
+
+### Recruiter creates job (validation error -> 400: missing title)
+POST {{base}}/jobs
+Authorization: Bearer PASTE_RECRUITER_TOKEN
+Content-Type: application/json
+
+{ "description": "A valid description here", "location": "Pune", "companyName": "TechNova" }
+
+### Unknown job -> 404
+GET {{base}}/jobs/64b000000000000000000000
